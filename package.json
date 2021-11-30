@@ -1,0 +1,20 @@
+{
+  "name": "react_ecosystem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshraiborde/react_ecosystem.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshraiborde/react_ecosystem/issues"
+  },
+  "homepage": "https://github.com/joshraiborde/react_ecosystem#readme"
+}
