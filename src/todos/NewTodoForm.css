@@ -14,3 +14,17 @@
     width: 80%;
     outline: none;
 }
+
+.new-todo-button {
+    font-size: 20px;
+    padding: 12px;
+    border: 10px;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    margin-left: 8px;
+    width: 20%;
+    background-color: burlywood;
+
+
+}
