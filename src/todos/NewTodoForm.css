@@ -1,28 +1,29 @@
 .new-todo-form {
     border-radius: 8px;
-    padding: 16px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgb(114, 111, 111);
+    padding: 16px; /* spacing between the content and the border */
+    text-align: center; /* specifies the horizontal alignment of text in an element */
+    box-shadow: 0 4px 8px rgb(114, 111, 111); /* attaches one or more shadows to an element */
+    background-color: rgb(60, 73, 97);
 }
 
 .new-todo-input {
     font-size: 20px;
-    padding: 8px;
-    border: auto;
+    padding: 8px; /* spacing between the content and the border */
+    border: auto; /* allow you to specify the style, width, and color of an element's border */
     border-bottom: 2px solid rgb(221, 221, 221);
-    border-radius: 8px;
-    width: 70%;
-    outline: none;
+    border-radius: 8px; /* defines the radius of the element's corners */
+    width: 70%; /* sets the width of an element. */
+    outline: none; /* a line drawn outside the element's border. */
 }
 
 .new-todo-button {
     font-size: 16px;
-    padding: 5px;
-    border: none;
-    border-radius: 8px;
-    outline: none;
-    cursor: pointer;
-    margin-left: 8px;
-    width: 20%;
-    background-color: #22adee;
+    padding: 5px; /* spacing between the content and the border */
+    border: none; /* allow you to specify the style, width, and color of an element's border */
+    border-radius: 8px; /* defines the radius of the element's corners */
+    outline: none; /* a line drawn outside the element's border. */
+    cursor: pointer; /* The cursor is a pointer and indicates a link */
+    margin-left: 8px; /* sets the left margin of an element */
+    width: 20%; /* sets the width of an element. */
+    background-color: #22adee; /* Set the background color for a page */
 }
