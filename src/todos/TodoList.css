@@ -1,1 +1,4 @@
- /* needs to be styled */
+.list-wrapper {
+    max-width: 70%; /* determines the width of the wrapper */
+    margin: auto; /* space around the element */
+}
