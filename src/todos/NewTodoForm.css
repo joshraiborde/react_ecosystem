@@ -1,30 +1,28 @@
 .new-todo-form {
-    text-align: center;
     border-radius: 8px;
-    padding: 9px;
-    box-shadow: 0 4px 8px grey;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgb(114, 111, 111);
 }
 
 .new-todo-input {
     font-size: 20px;
-    padding: 10px;
-    border: 8px;
-    border-bottom: 10px solid whitesmoke;
-    border-radius: 12px;
-    width: 80%;
+    padding: 8px;
+    border: auto;
+    border-bottom: 2px solid rgb(221, 221, 221);
+    border-radius: 8px;
+    width: 70%;
     outline: none;
 }
 
 .new-todo-button {
-    font-size: 20px;
-    padding: 12px;
-    border: 10px;
+    font-size: 16px;
+    padding: 5px;
+    border: none;
     border-radius: 8px;
     outline: none;
     cursor: pointer;
     margin-left: 8px;
     width: 20%;
-    background-color: burlywood;
-
-
+    background-color: #22adee;
 }
