@@ -5,3 +5,12 @@
     box-shadow: 0 4px 8px grey;
 }
 
+.new-todo-input {
+    font-size: 20px;
+    padding: 10px;
+    border: 8px;
+    border-bottom: 10px solid whitesmoke;
+    border-radius: 12px;
+    width: 80%;
+    outline: none;
+}
