@@ -5,10 +5,15 @@ export const todos = (state, action) => {
 
     switch (type) {
         case CREATE_TODO: {
-
+            const {text} = payload;
+            const newTodo = {
+                text,
+                isCompleted: false,
+            };
+            return state.concat(newTodo);
         }
         case REMOVE_TODO: {
-            
+
         }
 
     }
