@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import './NewTodoForm.css'
 
-const NewTodoForm= () => {
+const NewTodoForm= ({todos}) => {
     const [inputValue, setInputValue] = useState('');
 
     return (
@@ -17,7 +17,9 @@ const NewTodoForm= () => {
 )
 };
 
-const mapStateToProps = state => ({});
+const mapStateToProps = state => ({
+    todos: state.todos,
+});
 
 const mapDispatchToProps = dispatch => ({});
 
