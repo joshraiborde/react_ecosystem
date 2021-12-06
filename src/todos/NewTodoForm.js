@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { connect } from 'react-redux';
 import './NewTodoForm.css'
 
 const NewTodoForm= () => {
@@ -16,4 +17,8 @@ const NewTodoForm= () => {
 )
 };
 
-export default NewTodoForm;
+const mapStateToProps = state => ({});
+
+const mapDispatchToProps = dispatch => ({});
+
+export default connect(mapStateToProps, mapDispatchToProps)(NewTodoForm);
