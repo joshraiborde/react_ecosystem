@@ -1,7 +1,7 @@
 import React from 'react';
 import './TodoList.css'
 
-const TodoListItem = ({ todo }) => (
+const TodoListItem = ({ todo, onRemovedPressed }) => (
     <div className="todo-item-container" >
         <h3>{todo.text}</h3>
         <div className="buttons-container" >
