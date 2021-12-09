@@ -1,3 +1,3 @@
-export cont displayAlert = () => () => {
+export const displayAlert = () => () => {
     alert('Hello!');
 };
