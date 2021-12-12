@@ -8,8 +8,8 @@ import './TodoList.css';
 
 const TodoList = ({ todos = [], onRemovePressed, onCompletedPressed}) => {
     const loadingMessage = <div>Loading todos...</div>;
-    
-    return (
+
+    const content =  (
         <div className="list-wrapper">
             <NewTodoForm />
             {todos.map(todo => <TodoListItem
@@ -20,6 +20,7 @@ const TodoList = ({ todos = [], onRemovePressed, onCompletedPressed}) => {
                 />)}
         </div>
     );
+    return isLoading ? loadingMessage : content;
 }
 
 const mapStateToProps = state => ({
