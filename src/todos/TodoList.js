@@ -6,17 +6,21 @@ import { removeTodo, markTodoAsCompleted } from './actions';
 import { displayAlert } from './thunks'
 import './TodoList.css';
 
-const TodoList = ({ todos = [], onRemovePressed, onCompletedPressed}) => (
-    <div className="list-wrapper">
-        <NewTodoForm />
-        {todos.map(todo => <TodoListItem
-            todo={todo}
-            onRemovePressed={onRemovePressed}
-            onCompletedPressed={onCompletedPressed}
-            // onCompletedPressed={onDisplayAlertClicked}
-             />)}
-    </div>
-);
+const TodoList = ({ todos = [], onRemovePressed, onCompletedPressed}) => {
+    const loadingMessage = <div>Loading todos...</div>;
+    
+    return (
+        <div className="list-wrapper">
+            <NewTodoForm />
+            {todos.map(todo => <TodoListItem
+                todo={todo}
+                onRemovePressed={onRemovePressed}
+                onCompletedPressed={onCompletedPressed}
+                // onCompletedPressed={onDisplayAlertClicked}
+                />)}
+        </div>
+    );
+}
 
 const mapStateToProps = state => ({
     todos: state.todos,
