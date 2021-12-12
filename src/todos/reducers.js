@@ -1,4 +1,11 @@
-import { CREATE_TODO, REMOVE_TODO, MARK_TODO_AS_COMPLETED } from './actions';
+import {
+    CREATE_TODO,
+    REMOVE_TODO,
+    MARK_TODO_AS_COMPLETED,
+    LOAD_TODOS_IN_PROGRESS,
+    LOAD_TODOS_SUCCESS,
+    LOAD_TODOS_FAILURE,
+} from './actions';
 
 export const todos = (state = [], action) => {
     const { type, payload } = action;
