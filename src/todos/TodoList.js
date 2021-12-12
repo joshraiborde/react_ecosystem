@@ -6,7 +6,7 @@ import { removeTodo, markTodoAsCompleted } from './actions';
 import { displayAlert } from './thunks'
 import './TodoList.css';
 
-const TodoList = ({ todos = [], onRemovePressed, onCompletedPressed}) => {
+const TodoList = ({ todos = [], onRemovePressed, onCompletedPressed, isLoading}) => {
     const loadingMessage = <div>Loading todos...</div>;
 
     const content =  (
@@ -24,6 +24,7 @@ const TodoList = ({ todos = [], onRemovePressed, onCompletedPressed}) => {
 }
 
 const mapStateToProps = state => ({
+    isLoading: state.isLoading;
     todos: state.todos,
 });
 
