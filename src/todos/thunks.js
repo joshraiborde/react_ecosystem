@@ -36,15 +36,15 @@ export const addTodoRequest = text => async dispatch => {
     }
 }
 
-export const removeTodoRequest = id = async dispatch => {
+export const removeTodoRequest = id => async dispatch => {
     try {
-        const response = await fetch(`http://localhost:8080/todos/${id}`,{
-            method: 'delet'
-        })
+        const response = await fetch(`http://localhost:8080/todos/${id}`, {
+            method: 'delete'
+        });
         const removedTodo = await response.json();
-        dispatch(removeTodo(removedTodo))
-    } catch(e) {
-        dispatch(displayAlert(e))
+        dispatch(removeTodo(removedTodo));
+    } catch (e) {
+        dispatch(displayAlert(e));
     }
 }
 
