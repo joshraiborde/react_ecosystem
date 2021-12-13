@@ -16,6 +16,7 @@ export const loadTodos = () => async (dispatch, getState) => {
 }
 
 export const addTodoRequest = text => async dispatch => {
+    try {
     const body = JSON.stringify({ text });
     const response = await fetch('http://localhose:8080/todos', {
         headers: {
@@ -26,6 +27,9 @@ export const addTodoRequest = text => async dispatch => {
     });
     const todo = await response.json();
     dispatch(createTodo(todo));
+    } catch (e){
+        dispatch(displayAlert(e));
+    }
 }
 
 export const displayAlert = text => () => {
