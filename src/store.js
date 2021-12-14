@@ -8,7 +8,6 @@ import { todos } from './todos/reducers';
 
 const reducers = {
     todos,
-    isLoading,
 };
 
 const persistConfig = {
