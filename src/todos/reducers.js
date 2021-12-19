@@ -54,7 +54,7 @@ export const todos = (state = initialState, action) => {
     case LOAD_TODOS_FAILURE:
         return {
             ...state,
-            isLoading: true,
+            isLoading: false,
         }
     default:
         return state;
