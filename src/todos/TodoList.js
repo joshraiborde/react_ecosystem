@@ -40,7 +40,8 @@ const TodoList = ({ todos = [], onRemovePressed, onCompletedPressed, isLoading, 
 
 const mapStateToProps = state => ({
     isLoading: getTodosLoading(state),
-    todos: getTodos(state),
+    completedTodos: getCompletedTodos(state),
+    incompletedTodos: getIncompleteTodos(state),
 });
 
 const mapDispatchToProps = dispatch => ({
