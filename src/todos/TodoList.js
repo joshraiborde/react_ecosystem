@@ -2,8 +2,17 @@ import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import NewTodoForm from './NewTodoForm';
 import TodoListItem from './TodoListItem';
-import { loadTodos, removeTodoRequest, markTodoAsCompletedRequest } from './thunks';
-import { getTodos, getTodosLoading } from './selectors';
+import {
+    loadTodos,
+    removeTodoRequest,
+    markTodoAsCompletedRequest,
+    } from './thunks';
+import {
+    getTodos,
+    getTodosLoading,
+    getCompletedTodos,
+    getIncompleteTodos,
+     } from './selectors';
 
 import { displayAlert } from './thunks'
 import './TodoList.css';
