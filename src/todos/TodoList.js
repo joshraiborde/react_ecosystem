@@ -27,18 +27,16 @@ const TodoList = ({ completedTodos, incompletedTodos, onRemovePressed, onComplet
     const content =  (
         <div className="list-wrapper">
             <NewTodoForm />
-            <h3>Incompleted:</h3>
-            {incompletedTodos.map(todo => <TodoListItem
+            <h3>Incomplete:</h3>
+            {incompleteTodos.map(todo => <TodoListItem
                 todo={todo}
                 onRemovePressed={onRemovePressed}
-                onCompletedPressed={onCompletedPressed}
-                />)}
-                <h3>Completed:</h3>
+                onCompletedPressed={onCompletedPressed}/>)}
+            <h3>Completed:</h3>
             {completedTodos.map(todo => <TodoListItem
                 todo={todo}
                 onRemovePressed={onRemovePressed}
-                onCompletedPressed={onCompletedPressed}
-                />)}
+                onCompletedPressed={onCompletedPressed}/>)}
         </div>
     );
     return isLoading ? loadingMessage : content;
