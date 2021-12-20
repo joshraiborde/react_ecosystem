@@ -16,6 +16,7 @@ import {
      import './TodoList.css';
      // import { displayAlert } from './thunks'
 
+
 const TodoList = ({ completedTodos, incompleteTodos, onRemovePressed, onCompletedPressed, isLoading, startLoadingTodos }) => {
     useEffect(() => {
         startLoadingTodos();
