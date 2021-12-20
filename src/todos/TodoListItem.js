@@ -47,11 +47,11 @@ const TodoListItem = ({ todo, onRemovePressed, onCompletedPressed }) => (
         ? null
         :<CompletedButton 
             onClick={() => onCompletedPressed(todo.id)}
-            className="completed-button">Mark As Completed</CompletedButton>
+            >Mark As Completed</CompletedButton>
         }
             <RemoveButton
                 onClick={() => onRemovePressed(todo.id)}
-                className="remove-button">Remove</RemoveButton>
+                >Remove</RemoveButton>
         </ButtonsContainer>
     </TodoItemContainer>
 );
