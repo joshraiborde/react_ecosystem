@@ -13,7 +13,6 @@ import {
     getCompletedTodos,
     getIncompleteTodos,
      } from './selectors';
-     import './TodoList.css';
 
 const ListWrapper = styled.div`
     max-width: 70%; /* determines the width of the wrapper */
