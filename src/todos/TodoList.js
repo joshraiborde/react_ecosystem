@@ -13,11 +13,10 @@ import {
     getCompletedTodos,
     getIncompleteTodos,
      } from './selectors';
+     import './TodoList.css';
+     // import { displayAlert } from './thunks'
 
-import { displayAlert } from './thunks'
-import './TodoList.css';
-
-const TodoList = ({ completedTodos, incompletedTodos, onRemovePressed, onCompletedPressed, isLoading, startLoadingTodos }) => {
+const TodoList = ({ completedTodos, incompleteTodos, onRemovePressed, onCompletedPressed, isLoading, startLoadingTodos }) => {
     useEffect(() => {
         startLoadingTodos();
     }, [] );
@@ -42,17 +41,16 @@ const TodoList = ({ completedTodos, incompletedTodos, onRemovePressed, onComplet
     return isLoading ? loadingMessage : content;
 }
 
-const mapStateToProps = state => ({
+const mapStateToProps = state => ({ 
     isLoading: getTodosLoading(state),
     completedTodos: getCompletedTodos(state),
-    incompletedTodos: getIncompleteTodos(state),
+    incompleteTodos: getIncompleteTodos(state),
 });
 
 const mapDispatchToProps = dispatch => ({
     startLoadingTodos: () => dispatch(loadTodos()),
     onRemovePressed: id => dispatch(removeTodoRequest(id)),
     onCompletedPressed: id => dispatch(markTodoAsCompletedRequest(id)),
-    // onDisplayAlertClicked: text => dispatch (displayAlert(text)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(TodoList);
