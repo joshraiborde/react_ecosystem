@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { getTodos } from './selectors';
 import { addTodoRequest } from './thunks';
 import styled from 'styled-components';
-import './NewTodoForm.css';
 
 const FormContainer = styled.div`
     border-radius: 8px;
