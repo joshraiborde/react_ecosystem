@@ -17,7 +17,7 @@ const ButtonsContainer = styled.div`
     bottom: 12px;
 `;
 
-const CompletedButton = styled.div`
+const CompletedButton = styled.button`
     font-size: 16px;
     padding: 8px;
     border: none;
@@ -26,6 +26,18 @@ const CompletedButton = styled.div`
     cursor: pointer;
     display: inline-block;
     background-color: #22ee22;
+`;
+
+const RemoveButton = styled.button`
+    font-size: 16px;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    background-color: #ee2222;
+    margin-left: 8px;
 `;
 
 const TodoListItem = ({ todo, onRemovePressed, onCompletedPressed }) => (
