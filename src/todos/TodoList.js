@@ -14,8 +14,11 @@ import {
     getIncompleteTodos,
      } from './selectors';
      import './TodoList.css';
-     // import { displayAlert } from './thunks'
 
+const ListWrapper = styled.div`
+    max-width: 70%; /* determines the width of the wrapper */
+    margin: auto; /* space around the element */
+`;
 
 const TodoList = ({ completedTodos, incompleteTodos, onRemovePressed, onCompletedPressed, isLoading, startLoadingTodos }) => {
     useEffect(() => {
@@ -25,7 +28,7 @@ const TodoList = ({ completedTodos, incompleteTodos, onRemovePressed, onComplete
     const loadingMessage = <div>Loading todos...</div>;
 
     const content =  (
-        <div className="list-wrapper">
+        <ListWrapper>
             <NewTodoForm />
             <h3>Incomplete:</h3>
             {incompleteTodos.map(todo => <TodoListItem
@@ -37,7 +40,7 @@ const TodoList = ({ completedTodos, incompleteTodos, onRemovePressed, onComplete
                 todo={todo}
                 onRemovePressed={onRemovePressed}
                 onCompletedPressed={onCompletedPressed}/>)}
-        </div>
+        </ListWrapper>
     );
     return isLoading ? loadingMessage : content;
 }
