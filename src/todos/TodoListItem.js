@@ -24,6 +24,8 @@ const CompletedButton = styled.div`
     border-radius: 8px;
     outline: none;
     cursor: pointer;
+    display: inline-block;
+    background-color: #22ee22;
 `;
 
 const TodoListItem = ({ todo, onRemovePressed, onCompletedPressed }) => (
