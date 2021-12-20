@@ -9,7 +9,6 @@ import {
     markTodoAsCompletedRequest,
     } from './thunks';
 import {
-    getTodos,
     getTodosLoading,
     getCompletedTodos,
     getIncompleteTodos,
