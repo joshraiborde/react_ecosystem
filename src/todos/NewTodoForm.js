@@ -40,7 +40,6 @@ const NewTodoForm = ({ todos, onCreatePressed }) => {
     return (
         <FormContainer>
             <NewTodoInput
-                className="new-todo-input"
                 type="text"
                 placeholder="Type your new todo here"
                 value={inputValue}
@@ -54,7 +53,7 @@ const NewTodoForm = ({ todos, onCreatePressed }) => {
                         setInputValue('');
                     }
                 }}
-                className="new-todo-button">
+                >
                 Create Todo
             </NewTodoButton>
         </FormContainer>
