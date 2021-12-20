@@ -50,9 +50,9 @@ const TodoListItem = ({ todo, onRemovePressed, onCompletedPressed }) => (
             onClick={() => onCompletedPressed(todo.id)}
             className="completed-button">Mark As Completed</CompletedButton>
         }
-            <button
+            <RemoveButton
                 onClick={() => onRemovePressed(todo.id)}
-                className="remove-button">Remove</button>
+                className="remove-button">Remove</RemoveButton>
         </ButtonsContainer>
     </TodoItemContainer>
 );
